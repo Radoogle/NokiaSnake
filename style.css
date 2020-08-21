@@ -55,13 +55,34 @@ footer {
 }
 
 h2 {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 /* do not edit above */
 
 :root {
-    --cell-width: 80px;
-    --cell-height: 80px; 
+    --cell-width: 20px;
+    --cell-height: 20px; 
 }
 
+.grid {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+}
+
+.grid div {
+    width: var(--cell-width);
+    height: var(--cell-height);
+}
+
+.snake {
+    background-color: blue;
+}
+
+.apple {
+    background-color: purple;
+}
