@@ -61,14 +61,14 @@ h2 {
 /* do not edit above */
 
 :root {
-    --cell-width: 20px;
-    --cell-height: 20px; 
+    --cell-width: 3em;
+    --cell-height: 3em; 
 }
 
 .grid {
     margin: 50px auto;
-    width: 200px;
-    height: 200px;
+    width: calc(var(--cell-width) * 10);
+    height: calc(var(--cell-height) * 10);
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
@@ -85,4 +85,18 @@ h2 {
 
 .apple {
     background-color: purple;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+#restart {
+    line-height: 2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: red; 
+    margin-bottom: 10px;
 }
